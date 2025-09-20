@@ -21,9 +21,10 @@
     </select>
     
     <div>
-        <label>Username</label>
-        <input v-if="selectedInput == 'username'" placeholder="Enter your username">
+        <label>{{ selectedInput === 'username' ? 'Username' : 'Email' }}</label>
+        <input v-if="selectedInput === 'username'" placeholder="Enter your username">
         <input v-else type="email" placeholder="Enter your email">
     </div>
+
 </template>
 

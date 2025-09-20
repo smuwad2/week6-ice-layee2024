@@ -25,7 +25,7 @@
         </div>
         
         <button type="button" 
-        v-bind:class="[isBlue ? 'btn btn-secondary' : 'btn btn-danger']" 
+        v-bind:class="[isBlue ? 'btn btn-primary' : 'btn btn-danger']" 
         v-on:click="handleClick">Change Color</button>
     </div>
 

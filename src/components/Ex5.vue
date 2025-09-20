@@ -16,11 +16,11 @@ export default {
     methods: {
         // Add code here
         cycleTheme() {
-            const random = Math.floor(Math.random() * 3)
-            if (random == 0) {
+            this.currentThemeIndex = (this.currentThemeIndex + 1) % 3
+            if (this.currentThemeIndex == 0) {
                 this.textColor = '#fff'
                 this.bgColor = '#333'
-            } else if (random == 1) {
+            } else if (this.currentThemeIndex == 1) {
                 this.textColor = '#000'
                 this.bgColor = '#fff'
             } else {
