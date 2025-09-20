@@ -1,7 +1,14 @@
 <script>
+    const fruits = ['apple', 'orange', 'peach']
     export default { 
-        // Add Code Here
-        // challenge: use array  
+        data() {
+            return {
+                message: "Choose your favorite fruit:",
+                fruit1: fruits[0],
+                fruit2: fruits[1],
+                fruit3: fruits[2]
+            }
+        }
     }
 </script>
 
